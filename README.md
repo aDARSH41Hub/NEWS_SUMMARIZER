@@ -1,4 +1,11 @@
 # 📰 Intelligent News Summarization and Sentiment Analysis System
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red)
+![NLTK](https://img.shields.io/badge/NLTK-NLP-green)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-LLM-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+An interactive NLP-powered web application that combines **classical Natural Language Processing (NLTK)** with **Large Language Models (LLMs)** to analyze news articles.
 
 An interactive NLP-powered web application that performs classical Natural Language Processing (NLP) tasks alongside Large Language Model (LLM) capabilities to analyze news articles.
 
@@ -20,6 +27,11 @@ Built using **Python**, **Streamlit**, **NLTK**, and **OpenRouter (DeepSeek Chat
 - Clean and modular architecture
 
 ---
+## Why this project?
+
+Many news summarization applications rely entirely on Large Language Models. This project intentionally combines **classical NLP** with **LLM-based reasoning** to demonstrate both traditional Natural Language Processing techniques and modern prompt engineering.
+
+The preprocessing and keyword extraction pipeline is implemented using **NLTK**, making the workflow transparent and explainable. Higher-level language understanding tasks—including summarization, sentiment analysis, and question answering—are delegated to an LLM through carefully designed prompts that encourage concise, factual, and grounded responses.
 
 ## Demo
 
@@ -64,6 +76,24 @@ Paste any news article into the application.
 ```
 
 ---
+
+## Repository Structure
+NEWS_SUMMARIZER
+│
+├── screenshots/
+│   ├── home.png
+│   ├── input.png
+│   ├── analysis.png
+│   ├── qa.png
+│   └── grounding.png
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+├── LICENSE
+└── .env (local only)
+
 
 ## Tech Stack
 
@@ -198,32 +228,46 @@ The project intentionally uses different prompts for different tasks.
 
 ## Future Improvements
 
-- News article URL support
-- PDF and TXT upload
-- Multi-language support
-- Named Entity Recognition
-- Topic Classification
+- Support direct news article URLs
+- Upload TXT and PDF files
+- Multi-language summarization
+- Named Entity Recognition (NER)
+- Topic classification
 - Keyword visualization
-- Export reports as PDF
-- Article comparison
+- Export analysis as PDF
+- History of analyzed articles
+- Support multiple LLM providers
 
 ---
-
 ## Screenshots
 
-Add screenshots here after running the application.
+### Home
 
-Example:
-
-```
-screenshots/
-    home.png
-    summary.png
-    sentiment.png
-    qa.png
-```
+![Home](screenshots/home.png)
 
 ---
+
+### Article Input
+
+![Input](screenshots/input.png)
+
+---
+
+### Analysis
+
+![Analysis](screenshots/analysis.png)
+
+---
+
+### Question Answering
+
+![QA](screenshots/qa.png)
+
+---
+
+### Grounded Responses
+
+![Grounding](screenshots/grounding.png)
 
 ## Author
 
